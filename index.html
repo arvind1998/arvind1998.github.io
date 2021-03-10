@@ -481,8 +481,8 @@
 		console.log(len)
 
 
-		var tablearea = document.getElementById('tablearea')
-		tablearea.innerHTML ="";
+		var tablearea = document.getElementById('tablearea').createCaption();
+		tablearea.innerHTML ="<b><h1>Top 5 Combinations</h1></b>";
 
 		columns_list = ["os","os_version","browser","browser_version","capabilities","integration_url"]
 
