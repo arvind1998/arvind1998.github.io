@@ -451,7 +451,9 @@
 
   <div class="browserlist-container">
   <div class="browser-devices-wrapper">
+	  <h1> Top 5 Combinations </h1>
     <div id="tablearea"></div>
+	  
   </div>
 </div>
 
@@ -480,12 +482,12 @@
 		var len = Object.keys(obj).length
 		console.log(len)
 
-
+		
 		var tablearea = document.getElementById('tablearea');
-		tablearea.innerHTML ="<p style="text-align:center">Top 5 Combinations</p>";
+		tablearea.innerHTML ="";
 
 		columns_list = ["os","os_version","browser","browser_version","capabilities","integration_url"]
-
+		
     	table = document.createElement('table');
 		table.id = "customers"
 		var tr = document.createElement('tr');
